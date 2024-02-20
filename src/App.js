@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Carousel from "./components/carousel";
 import BodySection from "./components/bodySection";
 import DetailSection from "./components/detailSection";
+import LogoSection from "./components/logoSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Carousel />
       <BodySection />
       <DetailSection />
+      <LogoSection />
     </div>
   );
 }
