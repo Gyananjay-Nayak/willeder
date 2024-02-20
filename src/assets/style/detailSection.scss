@@ -1,0 +1,67 @@
+.detailSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dce1e6;
+  padding: 10% 12%;
+
+  .img-container {
+    text-align: right;
+    width: 55%;
+    z-index: 2;
+
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  .details-card {
+    margin-left: 20px;
+    padding: 20px;
+    width: 35%;
+    z-index: 2;
+  }
+
+  .details-card h2 {
+    margin-bottom: 10px;
+    border-bottom: 5px solid #6a45ff;
+    font-size: 32px;
+    width: 100%;
+
+  }
+  .details-card p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0 20px 0;
+  }
+  .details-card span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 7px;
+  }
+  .read-more{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+    svg{
+        cursor: pointer;
+    }
+  }
+
+}
+
+.detailSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 12%;
+  background-color: #6a45ff;
+  z-index: 1;
+}
