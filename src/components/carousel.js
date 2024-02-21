@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/style/carousel.scss";
-import Logo from "../assets/images/Logo.svg";
-import image1 from "../assets/images/image1.jpg";
+import Logo from "../assets/images/logo2.svg";
 import image2 from "../assets/images/image2.jpg";
 import image3 from "../assets/images/image3.jpg";
 import banner from "../assets/images/banner.jpg"
@@ -50,7 +49,6 @@ const Carousel = () => {
           alt={item.alt}
           className="carousel-item"
           key={index}
-        //   style={{ transform: `translate(-${currentIndex * 100}%)` }}
         />
       ))}
       <div className="text-block">

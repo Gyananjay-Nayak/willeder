@@ -5,11 +5,12 @@ import "../assets/style/detailSection.scss";
 const DetailSection = () => {
   return (
     <div className="detailSection">
+      <h2 className="details-title ">Lorem ipsum</h2>
       <div className="img-container">
         <img src={details} alt="details" />
       </div>
       <div className="details-card">
-        <h2>Lorem ipsum</h2>
+        <h2 className="card-title">Lorem ipsum</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+
+    .menu-content {
+        padding: 20px;
+      }
+      
+      .close-button {
+          border: none;
+          margin-bottom: 20px;
+          text-align: end;
+          
+          button{
+            background: none;
+            border: none;
+            font-size: $font-md;
+            cursor: pointer;
+        }
+      }
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+      
+      ul li {
+        margin-bottom: 10px;
+      }
+      
+      ul li a {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 16px;
+      }
+  }
+  
+  .menu.open {
+    right: 0;
+  }
+  
+  
+  
