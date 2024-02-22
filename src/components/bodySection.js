@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import image1 from "../assets/images/image1.jpg";
 import image2 from "../assets/images/image2.jpg";
 import image3 from "../assets/images/image3.jpg";
@@ -41,7 +42,7 @@ const BodySection = () => {
       <div className="container">
         {images.map((item, index) => (
           <div className="img-container" key={index}>
-            <img src={item.image} alt={item.alt} />
+            <LazyLoadImage src={item.image} alt={item.alt} />
             <div className="text-container">
                 <div>{item.id}</div>
                 <h2>{item.title}</h2>

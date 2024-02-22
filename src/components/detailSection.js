@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import details from "../assets/images/details.jpg";
 import "../assets/style/detailSection.scss";
 
@@ -7,7 +8,7 @@ const DetailSection = () => {
     <div className="detailSection">
       <h2 className="details-title ">Lorem ipsum</h2>
       <div className="img-container">
-        <img src={details} alt="details" />
+        <LazyLoadImage src={details} alt="details" />
       </div>
       <div className="details-card">
         <h2 className="card-title">Lorem ipsum</h2>
